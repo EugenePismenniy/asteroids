@@ -52,8 +52,9 @@ def main():
                 return
             for s in shots:
                 if a.is_collision(s):
-                    a.kill()
                     s.kill()
+                    a.split()
+                    
         
         for d in drawable:
             d.draw(screen)
